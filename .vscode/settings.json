@@ -1,0 +1,24 @@
+{
+    // 
+    // Editor settings
+    // 
+    "editor.formatOnSave": true,
+    "editor.rulers": [
+        88
+    ],
+    "editor.wordWrapColumn": 88,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    // 
+    // Python settings
+    // 
+    "python.languageServer": "Pylance",
+    "python.analysis.autoFormatStrings": true,
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.autoImportCompletions": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+}

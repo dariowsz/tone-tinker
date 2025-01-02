@@ -1,0 +1,21 @@
+preprocessing:
+  frame_size: 512
+  hop_length: 256
+  duration_seconds: 2
+  sample_rate: 48000
+
+training:
+  learning_rate: 0.0005
+  batch_size: 64
+  epochs: 100
+  validation_interval: 5
+  log_dir: "runs/sound_designer_experiments"
+
+autoencoder:
+  input_shape: [1, 256, 376]
+  conv_filters: [32, 64, 128, 256]
+  conv_kernels: [3, 3, 3, 3]
+  conv_strides: [2, 2, 2, 2]
+  decoder_output_padding: [1, 1, 1, [1, 0]]
+  latent_space_dim: 64
+  pretrained_weights_path: "checkpoints/autoencoder/64/2024-07-05_00:41:16/autoencoder_best.pth"
