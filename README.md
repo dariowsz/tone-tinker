@@ -31,6 +31,7 @@ The project consists of two main components:
 2. **Sound Designer**: Predicts synthesizer parameters from the encoded audio representation
 
 ## Architecture
+<img width="1004" alt="tone-tinker-arch" src="https://github.com/user-attachments/assets/869050bc-5cc7-491a-b8ee-7bcec100beaf" />
 
 ### Data Pipeline
 1. Raw audio (.wav) files → Log spectrograms
