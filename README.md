@@ -2,6 +2,27 @@
 
 Tone Tinker is a machine learning project that predicts Native Instruments Massive VST parameters from audio samples. The project uses a two-stage model architecture to reverse-engineer synthesizer parameters from raw audio.
 
+## Examples
+### Original:
+https://github.com/user-attachments/assets/effeb7bd-e8b6-403d-9823-f26381d72c5f
+
+
+https://github.com/user-attachments/assets/90be5994-e3ca-42dd-a99d-966204039fd4
+
+
+https://github.com/user-attachments/assets/c452f15b-81a9-45cd-be28-4d509a3c1538
+
+
+### Reconstructed
+https://github.com/user-attachments/assets/ce943f05-9496-4445-a50c-d9c5ec043602
+
+
+https://github.com/user-attachments/assets/50b195a3-8485-4cd5-aad9-f441dbb4c3d5
+
+
+https://github.com/user-attachments/assets/eaaf1203-caa3-460b-9cc9-9f6171863068
+
+
 ## Overview
 
 The project consists of two main components:
