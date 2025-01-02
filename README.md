@@ -89,6 +89,14 @@ python src/autoencoder_trainer.py
 python src/sound_designer_trainer.py
 ```
 
+### Demo
+To run the Streamlit demo, use the following command:
+```bash
+streamlit run demo.py
+```
+<img width="1496" alt="tone-tinker-demo" src="https://github.com/user-attachments/assets/1f9b45e1-1d1e-4b54-8ce5-37cb39b6b79c" />
+
+
 ## Project Status
 
 This is an initial proof of concept with a limited parameter set. Future improvements may include:
