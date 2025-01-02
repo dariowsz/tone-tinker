@@ -143,5 +143,6 @@ cython_debug/
 # Data folders
 data/
 
-# Checkpoints
+# Checkpoints and weights
 checkpoints/
+weights/
