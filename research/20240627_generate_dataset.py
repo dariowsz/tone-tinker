@@ -14,6 +14,12 @@ from tqdm import tqdm
 from src.schemas import SynthParameter
 
 # %%
+# Change these parameters to generate a different dataset
+split = "val"
+num_examples = 200
+osc1_wavetable_subset = ["Squ-Sw I", "Sin-Tri", "Plysaw II", "Esca II", "A.I."]
+
+# %%
 # Load a VST3 or Audio Unit plugin from a known path on disk:
 instrument = load_plugin(
     path_to_plugin_file="/Library/Audio/Plug-Ins/VST3/Massive.vst3",
@@ -25,10 +31,6 @@ df["change"] = df["change"] == 1
 df[df["change"]].head()
 
 # %%
-split = "val"
-num_examples = 200
-osc1_wavetable_subset = ["Squ-Sw I", "Sin-Tri", "Plysaw II", "Esca II", "A.I."]
-
 data = []
 for i in tqdm(range(num_examples)):
     example = {}
@@ -64,6 +66,6 @@ df = pd.DataFrame(data)
 df.to_csv(f"data/{split}.csv", index=False)
 
 # %%
-df = pd.read_csv("data/train.csv")
+df = pd.read_csv(f"data/{split}.csv")
 df["osc1_wavetable"].value_counts()
 # %%
