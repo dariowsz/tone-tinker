@@ -1,3 +1,0 @@
-1) Fix class imbalance in the dataset (if necessary)
-2) Armar un Streamlit app para visualizar las predicciones
-3) Add data augmentation techniques to the training pipeline ????
