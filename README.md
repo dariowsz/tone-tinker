@@ -2,27 +2,6 @@
 
 Tone Tinker is a machine learning project that predicts Native Instruments Massive VST parameters from audio samples. The project uses a two-stage model architecture to reverse-engineer synthesizer parameters from raw audio.
 
-## Examples
-### Original:
-https://github.com/user-attachments/assets/effeb7bd-e8b6-403d-9823-f26381d72c5f
-
-
-https://github.com/user-attachments/assets/90be5994-e3ca-42dd-a99d-966204039fd4
-
-
-https://github.com/user-attachments/assets/c452f15b-81a9-45cd-be28-4d509a3c1538
-
-
-### Reconstructed
-https://github.com/user-attachments/assets/ce943f05-9496-4445-a50c-d9c5ec043602
-
-
-https://github.com/user-attachments/assets/50b195a3-8485-4cd5-aad9-f441dbb4c3d5
-
-
-https://github.com/user-attachments/assets/eaaf1203-caa3-460b-9cc9-9f6171863068
-
-
 ## Overview
 
 The project consists of two main components:
@@ -31,7 +10,7 @@ The project consists of two main components:
 2. **Sound Designer**: Predicts synthesizer parameters from the encoded audio representation
 
 ## Architecture
-<img width="1004" alt="tone-tinker-arch" src="https://github.com/user-attachments/assets/869050bc-5cc7-491a-b8ee-7bcec100beaf" />
+<img width="1006" alt="tone-tinker-arch" src="https://github.com/user-attachments/assets/deb445c0-71e1-41ef-b2e0-955f41984d29" />
 
 ### Data Pipeline
 1. Raw audio (.wav) files → Log spectrograms
@@ -52,6 +31,27 @@ The dataset was generated programmatically using:
 - Parameters sampled:
   - 2 continuous parameters
   - Wavetable selection (5 options: "Squ-Sw I", "Sin-Tri", "Plysaw II", "Esca II", "A.I.")
+
+## Examples
+### Original:
+https://github.com/user-attachments/assets/effeb7bd-e8b6-403d-9823-f26381d72c5f
+
+
+https://github.com/user-attachments/assets/90be5994-e3ca-42dd-a99d-966204039fd4
+
+
+https://github.com/user-attachments/assets/c452f15b-81a9-45cd-be28-4d509a3c1538
+
+
+### Reconstructed
+https://github.com/user-attachments/assets/ce943f05-9496-4445-a50c-d9c5ec043602
+
+
+https://github.com/user-attachments/assets/50b195a3-8485-4cd5-aad9-f441dbb4c3d5
+
+
+https://github.com/user-attachments/assets/eaaf1203-caa3-460b-9cc9-9f6171863068
+
 
 ## Getting Started
 
