@@ -1,0 +1,19 @@
+training:
+  learning_rate: 0.00001
+  batch_size: 64
+  epochs: 150
+  validation_interval: 5
+  log_dir: "runs/vae_experiments"
+  reconstruction_loss_weight: 1.0
+
+data:
+  train_spectrograms_path: "data/train_preprocessed/spectrograms"
+  val_spectrograms_path: "data/val_preprocessed/spectrograms"
+
+model:
+  input_shape: [1, 256, 376]
+  conv_filters: [32, 64, 128, 256]
+  conv_kernels: [3, 3, 3, 3]
+  conv_strides: [2, 2, 2, 2]
+  decoder_output_padding: [1, 1, 1, [1, 0]]
+  latent_space_dim: 64
