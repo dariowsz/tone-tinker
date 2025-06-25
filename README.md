@@ -14,11 +14,11 @@ The project consists of two main components:
 
 ### Data Pipeline
 1. Raw audio (.wav) files → Log spectrograms
-2. Spectrograms → Autoencoder → Latent representation
+2. Spectrograms → Variational Autoencoder → Latent representation
 3. Latent representation → Sound Designer → Synthesizer parameters
 
 ### Models
-- **Autoencoder**: Convolutional neural network that learns to compress and reconstruct audio spectrograms
+- **Variational Autoencoder**: Convolutional neural network that learns to compress and reconstruct audio spectrograms
 - **Sound Designer**: Multi-Layer Perceptron that predicts:
   - 2 continuous parameters (regression)
   - 1 categorical parameter (5-class classification for wavetable selection)
@@ -79,7 +79,7 @@ Follow the instructions in `research/20240627_generate_dataset.py`.
 python src/preprocess.py
 ```
 
-3. Train the autoencoder:
+3. Train the variational autoencoder:
 ```bash
 python src/vae_trainer.py
 ```
