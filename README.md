@@ -6,7 +6,7 @@ Tone Tinker is a machine learning project that predicts Native Instruments Massi
 
 The project consists of two main components:
 
-1. **Autoencoder**: Compresses audio spectrograms into a lower-dimensional latent space
+1. **Variational Autoencoder**: Compresses audio spectrograms into a lower-dimensional latent space
 2. **Sound Designer**: Predicts synthesizer parameters from the encoded audio representation
 
 ## Architecture
@@ -81,7 +81,7 @@ python src/preprocess.py
 
 3. Train the autoencoder:
 ```bash
-python src/autoencoder_trainer.py
+python src/vae_trainer.py
 ```
 
 4. Train the sound designer:
